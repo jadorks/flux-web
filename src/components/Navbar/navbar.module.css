@@ -1,0 +1,11 @@
+.container {
+    @apply px-14 py-8;
+}
+
+.content {
+    @apply flex justify-between;
+}
+
+.nav__menu {
+    @apply flex gap-8;
+}
