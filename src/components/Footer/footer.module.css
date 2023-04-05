@@ -1,0 +1,24 @@
+.container {
+  @apply border-t border-[#331441];
+}
+
+.content {
+  @apply mx-auto max-w-screen-2xl px-28 pt-12 pb-32;
+  @apply flex flex-col justify-center items-center gap-10 text-[#A8AFD680];
+}
+
+.content__footer {
+  @apply w-full flex justify-between;
+}
+
+.socials {
+  @apply flex gap-4 items-center;
+}
+
+.quick_links {
+  @apply flex gap-32;
+}
+
+.quick_links li {
+  @apply font-inter capitalize;
+}
