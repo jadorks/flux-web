@@ -1,0 +1,49 @@
+.content {
+  @apply mx-auto max-w-screen-2xl px-8 py-32;
+  @apply flex flex-col justify-center items-center;
+}
+
+.about__text {
+  @apply mb-[70px];
+}
+
+.about__text h2 {
+  @apply font-inter font-bold text-white text-center text-[52px] mb-[17px];
+}
+
+.about__text p {
+  @apply text-center text-[21px] max-w-[500px] text-[#FFFFFFB2];
+}
+
+.about__cards {
+  @apply grid grid-cols-1 md:grid-cols-2 gap-[50px];
+}
+
+.card {
+  @apply relative flex flex-col items-center;
+  @apply px-8 py-14;
+  background: rgba(37, 17, 45, 0.6);
+  border: 1px solid rgba(96, 39, 116, 0.29);
+  border-radius: 18px;
+  backdrop-filter: blur(4px);
+}
+
+.card__glow {
+    position: absolute;
+    opacity: 0.5;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%)
+}
+
+.card__body {
+  @apply mt-[20px] text-center font-inter;
+}
+
+.card__body h3 {
+  @apply text-white text-[24px] font-[600] mb-[15px];
+}
+
+.card__body p {
+  @apply text-[#FFFFFF99] text-[18px];
+}

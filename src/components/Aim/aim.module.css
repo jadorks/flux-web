@@ -1,0 +1,21 @@
+.content {
+  @apply mx-auto max-w-screen-2xl px-8 pb-32;
+  @apply flex justify-between items-center;
+}
+
+.content__text {
+  @apply flex flex-col text-white font-inter gap-[32px] max-w-[550px];
+}
+
+.content__text h2 {
+  @apply font-bold text-[52px];
+}
+
+.content__text p {
+  @apply text-[21px] text-[#FFFFFFB2];
+}
+
+.content__text ul li {
+  @apply flex items-center gap-4 mb-4;
+  @apply text-[20px] font-[500];
+}

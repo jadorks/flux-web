@@ -1,0 +1,50 @@
+.content {
+  @apply mx-auto max-w-screen-2xl px-8 pb-32;
+}
+
+.card {
+  @apply relative flex flex-col items-center;
+  @apply px-8 py-14;
+  background: rgba(37, 17, 45, 0.6);
+  border: 1px solid rgba(96, 39, 116, 0.29);
+  border-radius: 18px;
+  backdrop-filter: blur(4px);
+}
+
+.card__body {
+  @apply mt-[20px] text-center font-inter;
+}
+
+.card__body h2 {
+  @apply text-white text-[44px] font-[600] mb-[15px];
+}
+
+.card__body p {
+  @apply text-[#FFFFFF99] text-[18px];
+}
+
+.card img {
+  top: 0;
+  opacity: 0.5;
+}
+
+.card img:last-of-type {
+  opacity: 1;
+}
+
+.card img:first-of-type {
+  position: absolute;
+  z-index: -1;
+}
+
+.card img:nth-of-type(2) {
+  position: absolute;
+  right: 55%;
+  z-index: -1;
+}
+
+.card img:nth-of-type(3) {
+  position: absolute;
+  left: 55%;
+  z-index: -1;
+}

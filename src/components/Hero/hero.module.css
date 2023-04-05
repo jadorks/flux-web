@@ -1,6 +1,7 @@
 .container {
   background: url("/home_bg.png");
   background-size: cover;
+  background-position: center;
 }
 
 .content {

@@ -1,0 +1,16 @@
+.content {
+  @apply mx-auto max-w-screen-2xl px-8 pb-32;
+}
+
+.content h2 {
+  @apply font-bold text-white text-[52px] max-w-[900px] mb-10;
+}
+
+.features {
+  @apply grid grid-cols-1 md:grid-cols-2;
+}
+
+.features__list li {
+  @apply flex items-center gap-4 mb-6;
+  @apply text-[20px] font-inter font-[500] text-white;
+}
