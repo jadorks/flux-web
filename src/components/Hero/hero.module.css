@@ -1,0 +1,67 @@
+.container {
+  background: url("/home_bg.png");
+  background-size: cover;
+}
+
+.content {
+  @apply mx-auto max-w-screen-2xl px-8 py-32;
+  @apply flex flex-col justify-center items-center gap-[75px];
+}
+
+.hero__text {
+  @apply text-center flex flex-col items-center gap-[20px];
+}
+
+.hero__text p {
+  @apply font-inter;
+}
+
+.hero__text p:first-of-type {
+  @apply font-bold text-[18px] uppercase;
+  background: linear-gradient(269.83deg, #dd77cd 0%, #9a5aec 96.2%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.hero__text p:nth-of-type(2) {
+  @apply text-[#FFFFFF80] text-[21px] capitalize max-w-[523px];
+}
+
+.hero__text h1 {
+  @apply text-white font-inter font-bold text-[52px] max-w-[797px];
+}
+
+.hero__buttons {
+  @apply flex gap-[20px];
+}
+
+.hero__buttons button {
+  @apply rounded-[8px] font-poppins text-white;
+  @apply px-5 py-[16px] relative;
+}
+
+.hero__buttons span {
+  @apply font-inter font-bold italic text-[9px] px-2  bg-[#27D480] h-[14px];
+  @apply rounded-l-[8px] rounded-tr-[8px];
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.hero__buttons button:first-of-type {
+  background: linear-gradient(80.59deg, #9900cc 33.48%, #66227c 101.66%);
+}
+
+.hero__buttons button:nth-of-type(2)::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  @apply rounded-[8px] p-[2px];
+  z-index: -1;
+  background: linear-gradient(270deg, #bf5eff -6.46%, #cb37ff 106.12%);
+}

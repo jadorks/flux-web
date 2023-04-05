@@ -10,14 +10,12 @@ export default function Navbar() {
         </div>
         <div className={styles.nav}>
           <ul className={styles.nav__menu}>
-            <li>Home</li>
-            <li>Dashboard</li>
-            <li>Referrals</li>
-            <li>About Us</li>
-            <li>
-              <button>Trade Now</button>
-            </li>
+            <li><a href="">Home</a></li>
+            <li><a href="">Dashboard</a></li>
+            <li><a href="">Referrals</a></li>
+            <li><a href="">About Us</a></li>
           </ul>
+          <button>Trade Now</button>
         </div>
       </div>
     </div>
