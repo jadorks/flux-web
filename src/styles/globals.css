@@ -253,3 +253,8 @@
     font-display: swap;
   }
 }
+
+body {
+  margin: 0;
+  background: #1a0729;
+}
