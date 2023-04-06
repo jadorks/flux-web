@@ -8,11 +8,11 @@
 }
 
 .about__text h2 {
-  @apply font-inter font-bold text-white text-center text-[52px] mb-[17px];
+  @apply font-inter font-bold text-white text-center text-[30px] lg:text-[52px] mb-[17px];
 }
 
 .about__text p {
-  @apply text-center text-[21px] max-w-[500px] text-[#FFFFFFB2];
+  @apply text-center lg:text-[21px] max-w-[500px] text-[#FFFFFFB2];
 }
 
 .about__cards {
@@ -29,11 +29,11 @@
 }
 
 .card__glow {
-    position: absolute;
-    opacity: 0.5;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%)
+  position: absolute;
+  opacity: 0.5;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .card__body {
@@ -41,7 +41,7 @@
 }
 
 .card__body h3 {
-  @apply text-white text-[24px] font-[600] mb-[15px];
+  @apply text-white text-[20px] lg:text-[24px] font-[600] mb-[15px];
 }
 
 .card__body p {

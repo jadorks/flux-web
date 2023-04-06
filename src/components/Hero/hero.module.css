@@ -27,11 +27,11 @@
 }
 
 .hero__text p:nth-of-type(2) {
-  @apply text-[#FFFFFF80] text-[21px] capitalize max-w-[523px];
+  @apply text-[#FFFFFF80] lg:text-[21px] capitalize max-w-[523px];
 }
 
 .hero__text h1 {
-  @apply text-white font-inter font-bold text-[52px] max-w-[797px];
+  @apply text-white font-inter font-bold text-[28px] lg:text-[52px] max-w-[797px];
 }
 
 .hero__buttons {
@@ -40,7 +40,7 @@
 
 .hero__buttons button {
   @apply rounded-[8px] font-poppins text-white;
-  @apply px-5 py-[16px] relative;
+  @apply px-4 lg:px-5 py-[16px] relative;
 }
 
 .hero__buttons span {

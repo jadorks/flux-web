@@ -3,7 +3,7 @@
 }
 
 .content h2 {
-  @apply font-bold text-white text-[52px] max-w-[900px] mb-10;
+  @apply font-bold text-white text-[32px] lg:text-[52px] text-center lg:text-left max-w-[900px] mb-10;
 }
 
 .features {

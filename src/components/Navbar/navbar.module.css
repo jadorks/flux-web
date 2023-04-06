@@ -4,7 +4,7 @@
 }
 
 .content {
-  @apply mx-auto max-w-screen-2xl px-8 py-4;
+  @apply mx-auto max-w-screen-2xl px-6 py-6;
   @apply flex justify-between items-center;
 }
 
@@ -12,8 +12,12 @@
   @apply flex gap-[60px] items-center;
 }
 
+.logo {
+  @apply flex gap-3;
+}
+
 .nav__menu {
-  @apply flex gap-[60px] items-center;
+  @apply hidden lg:flex gap-[60px] items-center;
 }
 
 .nav__menu li {

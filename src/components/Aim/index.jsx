@@ -13,6 +13,7 @@ export default function Aim() {
             underlying support for the Defi ecosystem. Let every digital asset
             holder experience a truly safe. free and transparent Defi service.
           </p>
+          <img className={styles.mobile__image} src="/aim.svg" alt="" />
           <ul>
             <li>
               <img src="/check.svg" alt="" /> Built by experienced blockchain

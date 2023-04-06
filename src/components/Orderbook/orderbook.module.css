@@ -16,7 +16,7 @@
 }
 
 .card__body h2 {
-  @apply text-white text-[44px] font-[600] mb-[15px];
+  @apply text-white text-[30px] lg:text-[44px] font-[600] mb-[15px];
 }
 
 .card__body p {
@@ -24,7 +24,6 @@
 }
 
 .card img {
-  top: 0;
   opacity: 0.5;
 }
 
@@ -38,12 +37,15 @@
 }
 
 .card img:nth-of-type(2) {
+  @apply hidden lg:block;
   position: absolute;
   right: 55%;
   z-index: -1;
 }
 
 .card img:nth-of-type(3) {
+  @apply hidden lg:block;
+
   position: absolute;
   left: 55%;
   z-index: -1;

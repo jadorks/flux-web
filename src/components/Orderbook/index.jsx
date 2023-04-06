@@ -12,8 +12,14 @@ export default function Orderbook() {
           <img src="/advanced_orderbook.svg" alt="" />
           <div className={styles.card__body}>
             <h2>C-Dex Advanced Orderbook</h2>
-            <p>User buy and sell crypto directly to / from the</p>
             <p>
+              User buy and sell crypto directly to / from the
+              <span className="lg:hidden">
+                self custodial wallet of their choice. No Deposits, only. direct
+                crypto-flat transfers
+              </span>
+            </p>
+            <p className="hidden lg:block">
               self custodial wallet of their choice. No Deposits, only. direct
               crypto-flat transfers
             </p>

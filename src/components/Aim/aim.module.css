@@ -1,6 +1,6 @@
 .content {
   @apply mx-auto max-w-screen-2xl px-8 pb-32;
-  @apply flex justify-between items-center;
+  @apply flex flex-col lg:flex-row justify-between items-center;
 }
 
 .content__text {
@@ -8,14 +8,22 @@
 }
 
 .content__text h2 {
-  @apply font-bold text-[52px];
+  @apply font-bold text-[30px] lg:text-[52px] text-center lg:text-center;
 }
 
 .content__text p {
-  @apply text-[21px] text-[#FFFFFFB2];
+  @apply text-[21px] text-[#FFFFFFB2] text-center lg:text-center;
 }
 
 .content__text ul li {
   @apply flex items-center gap-4 mb-4;
   @apply text-[20px] font-[500];
+}
+
+.mobile__image {
+  @apply block lg:hidden;
+}
+
+.content__image {
+  @apply hidden lg:block;
 }
