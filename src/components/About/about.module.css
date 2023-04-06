@@ -1,3 +1,8 @@
+.container {
+  position: relative;
+  z-index: 2;
+}
+
 .content {
   @apply mx-auto max-w-screen-2xl px-8 py-32;
   @apply flex flex-col justify-center items-center;
@@ -34,6 +39,7 @@
   top: 0;
   left: 50%;
   transform: translateX(-50%);
+  z-index: -1;
 }
 
 .card__body {

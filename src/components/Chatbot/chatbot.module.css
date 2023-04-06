@@ -1,0 +1,89 @@
+.container {
+  @apply fixed bottom-8 right-12;
+  z-index: 9999;
+}
+
+.content {
+  @apply flex flex-col items-end;
+}
+
+.chat__toggle {
+  width: fit-content;
+  @apply flex flex-col items-center mt-4 cursor-pointer;
+}
+
+.chat__toggle p {
+  @apply text-white mt-1;
+  @apply font-poppins font-[500] text-[14px];
+}
+
+.chat__container {
+  background: rgba(33, 0, 44, 0.53);
+  backdrop-filter: blur(31px);
+  border-radius: 8px;
+  width: 316px;
+  height: 494px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.chat__head {
+  @apply flex gap-4 items-center px-4 py-3;
+  @apply border-b-[1px] border-white/[0.15];
+}
+
+.chat__head h3 {
+  @apply text-white font-poppins font-[500];
+}
+
+.chat__body {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  padding-inline: 10px;
+  margin-bottom: 20px;
+  gap: 1rem;
+  overflow: auto;
+  overflow-y: scroll;
+}
+
+.chat__body> :first-child{
+  margin-top: auto;
+}
+
+.chat__bubble {
+  @apply flex gap-2 items-start;
+}
+
+.chat__bubble_message {
+  @apply p-3;
+  background: rgba(229, 70, 255, 0.13);
+  backdrop-filter: blur(6.7957px);
+  border-radius: 8px;
+}
+
+.chat__bubble_message p {
+  @apply text-white font-poppins text-[14px];
+}
+
+.chat__input {
+  @apply flex mt-auto px-2 py-5 gap-2 justify-between;
+  @apply border-t-[1px] border-white/[0.15];
+}
+
+.chat__input input {
+  background: transparent;
+  outline: none;
+  @apply font-poppins text-white;
+}
+
+.chat__input button {
+  @apply rounded-[18px] px-3 py-1;
+  @apply font-poppins text-white text-[14px] font-bold;
+  background: linear-gradient(80.59deg, #9900cc 33.48%, #66227c 101.66%);
+}
+
+.chat__input button:disabled {
+  @apply text-white/[0.5];
+}

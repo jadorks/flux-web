@@ -19,6 +19,18 @@ export default function Hero() {
           <button>Add Liquidity</button>
         </div>
       </div>
+      <div className={styles.container__ellipses}>
+        <div className={styles.ellipses__inner}>
+          <img src="/elements/ellipses/ellipse_center_1.png" alt="" />
+          <img src="/elements/ellipses/ellipse_left_1.png" alt="" />
+          <img src="/elements/ellipses/ellipse_left_2.png" alt="" />
+          <img src="/elements/ellipses/ellipse_left_3.png" alt="" />
+          <img src="/elements/ellipses/ellipse_left_4.png" alt="" />
+          <img src="/elements/ellipses/ellipse_right_1.png" alt="" />
+          <img src="/elements/ellipses/ellipse_right_2.png" alt="" />
+          <img src="/elements/ellipses/ellipse_right_3.png" alt="" />
+        </div>
+      </div>
     </div>
   );
 }

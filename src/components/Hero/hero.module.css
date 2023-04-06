@@ -1,7 +1,9 @@
 .container {
-  background: url("/home_bg.png");
+  background: linear-gradient(#4a1371, #1a0729);
   background-size: cover;
   background-position: center;
+  position: relative;
+  z-index: 0;
 }
 
 .content {
@@ -62,7 +64,66 @@
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
-  @apply rounded-[8px] p-[2px];
-  z-index: -1;
+  @apply rounded-[8px] p-[1px];
+  z-index: 0;
   background: linear-gradient(270deg, #bf5eff -6.46%, #cb37ff 106.12%);
+}
+
+.container__ellipses {
+  @apply absolute h-full w-full top-0;
+  z-index: -1;
+}
+
+.ellipses__inner {
+  @apply relative h-full;
+}
+
+.ellipses__inner img {
+  @apply hidden lg:block;
+  position: absolute;
+}
+
+.ellipses__inner img:first-child {
+  @apply block opacity-100 lg:opacity-50 lg:left-[38%];
+  bottom: -300px;
+}
+
+.ellipses__inner img:nth-child(2) {
+  @apply block;
+  left: 60px;
+  top: 50px;
+}
+
+.ellipses__inner img:nth-child(3) {
+  left: 60px;
+  top: 300px;
+}
+
+.ellipses__inner img:nth-child(4) {
+  left: 150px;
+  bottom: 60px;
+}
+
+.ellipses__inner img:nth-child(5) {
+  left: 10%;
+  bottom: -310px;
+  opacity: 0.1;
+}
+
+.ellipses__inner img:nth-child(6) {
+  @apply block;
+  right: 60px;
+  top: 160px;
+}
+
+.ellipses__inner img:nth-child(7) {
+  @apply block right-[30px] lg:right-[350px];
+  top: 500px;
+  opacity: 0.2;
+}
+
+.ellipses__inner img:nth-child(8) {
+  right: 30px;
+  bottom: -200px;
+  opacity: 0.3;
 }

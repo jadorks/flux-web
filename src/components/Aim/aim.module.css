@@ -8,11 +8,11 @@
 }
 
 .content__text h2 {
-  @apply font-bold text-[30px] lg:text-[52px] text-center lg:text-center;
+  @apply font-bold text-[30px] lg:text-[52px] text-center lg:text-left;
 }
 
 .content__text p {
-  @apply text-[21px] text-[#FFFFFFB2] text-center lg:text-center;
+  @apply text-[21px] text-[#FFFFFFB2] text-center lg:text-left;
 }
 
 .content__text ul li {
