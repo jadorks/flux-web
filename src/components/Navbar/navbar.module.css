@@ -24,9 +24,25 @@
   @apply font-inter text-white opacity-[0.4] hover:opacity-100;
 }
 
-.nav button {
+.connect_btn {
   @apply text-white p-[13px] rounded-[8px];
   background: linear-gradient(80.59deg, #9900cc 33.48%, #66227c 101.66%);
+}
+
+.connect_btn_connected {
+  @apply relative text-white p-[13px] rounded-[8px] bg-transparent;
+}
+
+.connect_btn_connected::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  @apply rounded-[8px] p-[1px];
+  z-index: 0;
+  background: linear-gradient(270deg, #bf5eff -6.46%, #cb37ff 106.12%);
 }
 
 .nav_mobile {

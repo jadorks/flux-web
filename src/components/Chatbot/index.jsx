@@ -37,6 +37,14 @@ export default function Chatbot() {
             <div className={styles.chat__head}>
               <img src="/chat_buddy.svg" alt="" />
               <h3>Flux Chatbot</h3>
+              <img
+                onClick={() => {
+                  setChatboxVisible(false);
+                }}
+                className="ml-auto cursor-pointer"
+                src="/close.svg"
+                alt=""
+              />
             </div>
             <div ref={chatBoxRef} className={styles.chat__body}>
               {messages.map((item, index) => (
