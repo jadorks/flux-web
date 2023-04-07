@@ -37,7 +37,7 @@ backdrop-filter: blur(15px);
   }
   
   .wallet_dialog_close:hover {
-    @apply text-[#FA4F27];
+    @apply text-[#9900CC];
   }
   
   .wallet_dialog_title {
